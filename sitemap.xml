@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 上线前运行 python3 tools/set-domain.py <你的域名> 统一替换占位域名，并把 lastmod 改成本次更新时间 -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://hyliu87-design.github.io/</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hyliu87-design.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyliu87-design.github.io/en.html"/>
+  </url>
+  <url>
+    <loc>https://hyliu87-design.github.io/en.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hyliu87-design.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyliu87-design.github.io/en.html"/>
+  </url>
+  <url>
+    <loc>https://hyliu87-design.github.io/cv.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hyliu87-design.github.io/cv.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyliu87-design.github.io/cv-en.html"/>
+  </url>
+  <url>
+    <loc>https://hyliu87-design.github.io/cv-en.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://hyliu87-design.github.io/cv.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hyliu87-design.github.io/cv-en.html"/>
+  </url>
+</urlset>

@@ -1,0 +1,30 @@
+# 允许所有主流搜索引擎抓取（含百度、必应、谷歌、360、搜狗）
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# 百度
+User-agent: Baiduspider
+Allow: /
+
+# 百度移动端
+User-agent: Baiduspider-mobile
+Allow: /
+
+# 必应
+User-agent: bingbot
+Allow: /
+
+# 谷歌
+User-agent: Googlebot
+Allow: /
+
+# 360 搜索
+User-agent: 360Spider
+Allow: /
+
+# 搜狗
+User-agent: Sogou web spider
+Allow: /
+
+Sitemap: https://hyliu87-design.github.io/sitemap.xml

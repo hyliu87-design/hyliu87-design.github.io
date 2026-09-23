@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 单文件版：可直接发给别人，双击用浏览器打开 -->
+<title>刘海洋 · 简历</title>
+<meta name="description" content="刘海洋　博士 — 水产动物基因组学与分子育种 · 中国水产科学研究院珠江水产研究所 · 水产种质资源与遗传育种研究室 · 助理研究员">
+<meta name="robots" content="noindex,follow">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSLliJjmtbfmtIsiPgogIDxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjEyIiBmaWxsPSIjMGI1YzhhIi8+CiAgPHRleHQgeD0iMzIiIHk9IjQxIiBmb250LXNpemU9IjMwIiBmb250LWZhbWlseT0iUGluZ0ZhbmcgU0MsIE1pY3Jvc29mdCBZYUhlaSwgc2Fucy1zZXJpZiIKICAgICAgICBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7liJg8L3RleHQ+Cjwvc3ZnPgo=" type="image/svg+xml">
+<style>
+:root{
+  --fg:#1a1d21; --fg-soft:#4a5157; --bg:#ffffff; --bg-soft:#f7f8fa;
+  --line:#e3e6ea; --accent:#0b5c8a; --accent-soft:#e8f1f7; --maxw:960px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--fg);
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB",
+       "Microsoft YaHei","Noto Sans CJK SC","Source Han Sans SC",Arial,sans-serif;
+}
+a{color:var(--accent); text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+.skip{position:absolute; left:-9999px}
+.skip:focus{left:8px; top:8px; background:#fff; padding:8px 12px; border:1px solid var(--line); z-index:9}
+
+/* header */
+.site-header{position:sticky; top:0; z-index:5; background:rgba(255,255,255,.94);
+  backdrop-filter:saturate(180%) blur(8px); border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex; align-items:center; justify-content:space-between;
+  gap:16px; min-height:60px; flex-wrap:wrap; padding-top:8px; padding-bottom:8px}
+.brand{display:flex; align-items:baseline; gap:10px}
+.brand .name{font-size:19px; font-weight:700; letter-spacing:.02em}
+.brand .name-en{font-size:13px; color:var(--fg-soft)}
+.nav{display:flex; gap:14px; flex-wrap:wrap; font-size:14.5px}
+.nav a{color:var(--fg-soft)}
+.nav a.lang{border:1px solid var(--line); border-radius:999px; padding:2px 10px; color:var(--accent)}
+.nav a.cv-link{border:1px solid var(--accent); background:var(--accent-soft); border-radius:999px;
+  padding:2px 11px; color:var(--accent); font-weight:600}
+
+/* hero */
+.hero{padding:52px 20px 8px}
+.hero h1{margin:0 0 6px; font-size:clamp(25px,3.6vw,34px); line-height:1.25; letter-spacing:.01em}
+.hero .subtitle{font-size:15px; color:#7b8288; margin:0 0 16px}
+.lede{font-size:16.5px; color:var(--fg-soft); max-width:74ch; margin:0 0 16px}
+.lede strong{color:var(--fg); font-weight:650}
+.meta-line{font-size:14px; color:var(--fg-soft); border-top:1px dashed var(--line); padding-top:12px; margin:0}
+
+/* hero 个人照片 */
+.hero-grid{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:28px; align-items:start}
+.hero-photo{margin:0}
+.hero-photo img{display:block; width:clamp(132px,15vw,178px); height:auto; border-radius:10px;
+  border:1px solid var(--line); box-shadow:0 2px 10px rgba(0,0,0,.07)}
+
+/* stats */
+.stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin:22px 0 0}
+.stat{background:var(--bg-soft); border:1px solid var(--line); border-radius:10px; padding:14px 16px}
+.stat .num{font-size:23px; font-weight:700; color:var(--accent); line-height:1.2}
+.stat .lbl{font-size:13px; color:var(--fg-soft); margin-top:2px}
+
+/* sections */
+section.wrap{padding:32px 20px}
+h2{font-size:21px; margin:0 0 18px; padding-bottom:8px; border-bottom:2px solid var(--accent-soft); display:inline-block}
+h3{font-size:16.5px; margin:0 0 8px}
+p{margin:0 0 12px}
+.hint{font-size:13.5px; color:#8a9199; background:var(--bg-soft); border-left:3px solid var(--line);
+  padding:8px 12px; border-radius:0 6px 6px 0}
+
+/* cards */
+.cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(272px,1fr)); gap:16px}
+.card{background:var(--bg-soft); border:1px solid var(--line); border-radius:10px; padding:18px 18px 8px}
+.card p{font-size:14.6px; color:var(--fg-soft); margin-bottom:12px}
+
+/* lists */
+.plain-list{margin:0; padding-left:20px}
+.plain-list li{margin-bottom:9px}
+.plain-list.tight li{margin-bottom:5px; font-size:15px}
+
+/* publications */
+.pub-list{padding-left:0; margin:0 0 10px; list-style:none; counter-reset:p}
+.pub-list li{position:relative; padding-left:34px; margin-bottom:15px; font-size:14.8px; line-height:1.7}
+.pub-list li::before{counter-increment:p; content:counter(p); position:absolute; left:0; top:3px;
+  width:22px; height:22px; border-radius:50%; background:var(--accent-soft); color:var(--accent);
+  font-size:12px; font-weight:700; text-align:center; line-height:22px}
+.pub-title{font-weight:400}
+.pub-authors{color:var(--fg-soft)}
+.pub-journal{font-weight:700}
+.role{display:inline-block; font-size:11.5px; padding:1px 6px; border-radius:4px; margin-left:4px;
+  background:var(--accent-soft); color:var(--accent); vertical-align:1px; white-space:nowrap}
+.role.co{background:#eef7ee; color:#2f6b3a}
+
+/* timeline */
+.timeline{list-style:none; margin:0; padding:0}
+.timeline li{display:flex; gap:14px; padding:9px 0; border-bottom:1px dashed var(--line); font-size:15px}
+.timeline li:last-child{border-bottom:none}
+.timeline .when{flex:0 0 148px; color:#7b8288; font-variant-numeric:tabular-nums}
+
+/* footer */
+.site-footer{border-top:1px solid var(--line); margin-top:26px; padding:22px 0 40px;
+  background:var(--bg-soft); font-size:13.5px; color:var(--fg-soft)}
+.site-footer .tiny{font-size:12.5px; color:#9aa1a8; margin:4px 0 0}
+
+@media (max-width:640px){
+  .hero{padding-top:34px}
+  .hero-grid{grid-template-columns:1fr; gap:20px}
+  .hero-photo{order:-1}
+  .hero-photo img{width:min(46vw,168px); margin:0 auto}
+  section.wrap{padding:26px 20px}
+  .nav{gap:10px; font-size:13.5px}
+  .timeline li{flex-direction:column; gap:2px}
+  .timeline .when{flex:none}
+}
+@media print{
+  .site-header,.skip{display:none}
+  body{font-size:11pt} .card,.stat{break-inside:avoid}
+  .hero-photo img{width:120px; box-shadow:none}
+}
+
+</style>
+<style>
+  body{background:#fff}
+  .cv{max-width:820px;margin:0 auto;padding:22px 18px 60px}
+  .cv h1{font-size:clamp(21px,5vw,27px);margin:0 0 6px;line-height:1.3}
+  .cv-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:start;margin-bottom:8px}
+  .cv-photo{width:clamp(78px,20vw,104px);height:auto;border-radius:8px;border:1px solid var(--line)}
+  .cv .tagline{font-size:15.5px;color:var(--accent);font-weight:600;margin:0 0 4px}
+  .cv .subtitle{color:#6b7378;font-size:14px;margin:0 0 12px}
+  .cv .lede{font-size:15px;margin:0 0 14px}
+  .cv h2{font-size:17.5px;margin:26px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--accent-soft);display:block}
+  .cv .item{margin:0 0 10px}
+  .cv .item h3{font-size:15px;margin:0 0 2px}
+  .cv .item p{font-size:14px;color:var(--fg-soft);margin:0}
+  .cv .plain-list.tight li{font-size:14px;line-height:1.7}
+  .cv .stats{grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:9px;margin:14px 0 2px}
+  .cv .stat{padding:10px 12px}
+  .cv .stat .num{font-size:19px}
+  .cv .stat .lbl{font-size:12px}
+  .cv .pub-list li{font-size:13.6px;line-height:1.62;margin-bottom:11px}
+  .cv .pub-list li::before{width:19px;height:19px;line-height:19px;font-size:11px;top:2px}
+  .cv .role{font-size:10.5px}
+  .cv .timeline li{font-size:14px;padding:7px 0}
+  .cv .timeline .when{flex:0 0 128px;font-size:13px}
+  .cv-bar{position:sticky;top:0;z-index:9;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center;justify-content:space-between;
+    padding:9px 18px}
+  .cv-bar a,.cv-bar button{font-size:13.5px}
+  .cv-bar button{border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:999px;
+    padding:5px 14px;cursor:pointer;font-family:inherit}
+  .cv-note{font-size:12.5px;color:#8a9199;margin:18px 0 0}
+  @media (max-width:520px){
+    .cv-photo{width:84px}
+    .cv{padding:16px 14px 48px}
+    .cv .timeline li{flex-direction:column;gap:2px}
+    .cv .timeline .when{flex:none}
+    .cv .stats{grid-template-columns:1fr 1fr}
+  }
+  @media print{
+    .cv-bar{display:none}
+    .cv{max-width:none;padding:0}
+    .cv h2{margin:14px 0 6px} .cv .pub-list li{margin-bottom:7px}
+    .cv .stat{border:none;padding:0 6px 0 0;background:none}
+    a[href]:after{content:""}
+  }
+</style>
+</head>
+<body>
+<div class="cv-bar">
+  <button onclick="window.print()">下载 PDF / 打印</button>
+</div>
+<main class="cv">
+  <div class="cv-head">
+    <div class="cv-head-text">
+      <h1>刘海洋　博士</h1>
+      <p class="tagline">水产动物基因组学与分子育种</p>
+      <p class="subtitle">中国水产科学研究院珠江水产研究所 · 水产种质资源与遗传育种研究室 · 助理研究员</p>
+    </div>
+    <img class="cv-photo" src="data:image/jpeg;base64,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" width="320" height="421" alt="刘海洋 博士" decoding="async">
+  </div>
+  <p class="lede">2017 年毕业于中国科学院水生生物研究所（中国科学院大学），获遗传学博士学位，同年进入中国水产科学研究院珠江水产研究所工作至今。      主要从事水产动物种质资源开发与利用、重要经济性状遗传解析、      基因组选择育种及机器学习在水产育种中的应用研究。 建立了涵盖基因组组装与注释、群体遗传分析、全基因组关联分析（GWAS）及基因组选择的全流程技术体系。      已完成斑鳢、月鳢、鲮、瓦氏黄颡鱼、暗鳜等十余种水产动物的染色体级基因组组装；      系统开展鳢类种质资源普查，阐明主要养殖群体的遗传多样性、群体结构及历史动态；      解析鳢等鱼类生长和性别决定的遗传基础，开发多个性别特异性分子标记；      主持研制乌鳢、斑鳢两款 50K 液相育种芯片，构建基因组选择技术体系，      并探索机器学习算法在种质资源精准鉴定、复杂性状预测和基因组育种值评估中的应用；      参与培育全雄杂交鳢新品种“雄鳢1号”，推动其在主产区示范推广，形成了      “基因组解析—种质评价—性状解析—芯片研制—智能预测—育种应用—成果转化”的完整技术链条。
+             至今以第一或通讯作者发表 SCI 论文 31 篇（累计发表 SCI 论文 79 篇），论文总被引 1200 余次、H 指数 20；主持科研与转化项目 12 项（累计经费 258 万元），参与国家级、省部级项目 6 项；获授权专利 12 项（第一发明人发明专利 5 项，其中 2 项已实现成果转化）；参与培育国审杂交鳢新品种“雄鳢1号”（GS-02-003-2022）；获范蠡科学技术奖科技进步二等奖等科技奖励 7 项；参与制定行业标准 6 项、地方标准 1 项；兼任 <em>Animals</em>、<em>Fishes</em> 客座编辑，为 <em>Nature Communications</em>、<em>Scientific Data</em>、<em>iScience</em> 等国际期刊审稿。</p>
+  <div class="stats"><div class="stat"><div class="num">31 篇</div><div class="lbl">第一/通讯作者 SCI（累计 SCI 79 篇）</div></div><div class="stat"><div class="num">1200+</div><div class="lbl">论文总被引 · H 指数 20</div></div><div class="stat"><div class="num">12 项</div><div class="lbl">授权专利（第一发明人 5 项）</div></div><div class="stat"><div class="num">7 项</div><div class="lbl">行业与地方标准</div></div><div class="stat"><div class="num">12 项</div><div class="lbl">主持科研与转化项目</div></div><div class="stat"><div class="num">1 个</div><div class="lbl">参与培育国审新品种“雄鳢1号”</div></div></div>
+
+  <h2>研究方向</h2>
+  <div class="item"><h3>基因组资源构建与注释</h3><p>面向鳢科、鲮、黄颡鱼、鳜等经济鱼类，完成染色体级与高质量基因组组装（PacBio HiFi / ONT / Hi-C）， 并以多物种蛋白证据与 RNA 证据开展基因结构注释、重复序列与功能注释； 以 BUSCO、compleasm 等指标逐轮评估完整性，用缺口诊断与靶向修补提升基因集完整度。</p></div><div class="item"><h3>性别决定与重要经济性状遗传解析</h3><p>利用高密度遗传连锁图谱、QTL 精细定位、GWAS 与转录组联合分析，解析鱼类性别决定区域与生长性状的遗传基础； 在鳢（乌鳢、斑鳢、线鳢、月鳢）、鲮、瓦氏黄颡鱼、鳙/鲢等物种开发性别特异性分子标记， 支撑全雄/单性苗种生产。</p></div><div class="item"><h3>分子育种与育种芯片</h3><p>主持研制乌鳢、斑鳢两款 50K 液相 SNP 育种芯片（已获发明专利并实现转化）， 建立包含位点筛选、探针设计、分型质控与群体适用性验证的芯片研制流程； 开展基因组选择（GS）与标记辅助选育，并用于群体识别与亲子鉴定。</p></div><div class="item"><h3>群体遗传与种质资源评价</h3><p>基于重测序与简化基因组数据，评估野生与选育群体的遗传多样性、群体结构、连锁不平衡、选择信号与历史动态， 支撑鳢类等种质资源普查与保护利用，为育种亲本选配与配组策略提供依据。</p></div><div class="item"><h3>机器学习与智能育种</h3><p>将机器学习方法应用于水产育种流程：基于基因组与表型数据的种质资源精准鉴定与群体判别、 复杂性状预测、基因组育种值（GEBV）评估，支撑低密度 SNP 芯片的基因组选择与亲本选配。</p></div>
+
+  <h2>教育与工作经历</h2>
+  <ul class="timeline cv-timeline">
+      <li><span class="when">2007.09–2011.06</span><span>西南大学　水产养殖专业　本科（农学学士）</span></li>
+      <li><span class="when">2011.09–2017.06</span><span>中国科学院水生生物研究所（中国科学院大学）　遗传学专业　硕博连读（理学博士）</span></li>
+      <li><span class="when">2017.07–至今</span><span>中国水产科学研究院珠江水产研究所　水产种质资源与遗传育种研究室　助理研究员</span></li>
+    </ul>
+
+  <h2>第一/通讯作者论文（31）</h2>
+  <ol class="pub-list"><li>
+        <span class="pub-authors"><strong>Liu HY</strong>#, Xie W#, Liu JF, Cui TX, Luo Q, Fei SZ, Zhu XP, Chen KC, Ou M*, Zhao J*.</span>
+        <span class="pub-title">Chromosome-level genome assembly of blotched snakehead (Channa maculata) using PacBio HiFi and Hi-C sequencing.</span>
+        <span class="pub-journal">Scientific Data</span>, 2026, Article in Press.
+        <span class="role">第一作者</span>
+        <a href="https://doi.org/10.1038/s41597-026-07416-8" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors">Liang YY, Liu HJ, Cui K, Li J, Fang T, Gao N, Chen C, Zhao XX, Yang K, Wang X, Zhao J, Lu WX*, <strong>Liu HY</strong>*.</span>
+        <span class="pub-title">Chromosome-level genome assembly of Coreoperca whiteheadi.</span>
+        <span class="pub-journal">Scientific Data</span>, 2026, Article in Press.
+        <span class="role co">通讯作者</span>
+        <a href="https://doi.org/10.1038/s41597-026-08170-7" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors"><strong>Liu HY</strong>*, Liu HJ, Cui K, Lu WX, Li J, Fang T, Gao N, Chen C, Zhao XX, Yang K, Lin YF*, Liang YY*.</span>
+        <span class="pub-title">Chromosome-level genome assembly of the Siniperca obscura.</span>
+        <span class="pub-journal">Scientific Data</span>, 2026, 13: 333.
+        <span class="role co">通讯作者</span>
+        <a href="https://doi.org/10.1038/s41597-026-06678-6" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors"><strong>Liu HY</strong>, Li XY, Xie W, Wang Y, Ou M, Luo Q, Fei SZ, Zhang XC, Chen WF, Zhu XP, Chen KC, Zhao J*.</span>
+        <span class="pub-title">A genome-wide association study identifies candidate SNPs and genes associated with body weight in the northern snakehead (Channa argus) using a 50K SNP array.</span>
+        <span class="pub-journal">Animals</span>, 2026, 16: 2471.
+        <span class="role">第一作者</span>
+        <a href="https://doi.org/10.3390/ani16162471" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors">Zhang J, Cui TX, Liu JJ, Liu JF, Xia WW, Ou M, Luo Q, Fei SZ, Zhu XP, Chen KC, Zhao J*, <strong>Liu HY</strong>*.</span>
+        <span class="pub-title">Development of a 50K liquid SNP array and its application in GWAS and population genomics of northern snakehead (Channa argus).</span>
+        <span class="pub-journal">Aquaculture</span>, 2026, 743737.
+        <span class="role co">通讯作者</span>
+        <a href="https://doi.org/10.1016/j.aquaculture.2026.743737" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors">Zhang J, Cui TX, Yang ZW, Liu JJ, Liu JF, Ou M, Luo Q, Fei SZ, Zhu XP, Chen KC, Zhao J*, <strong>Liu HY</strong>*.</span>
+        <span class="pub-title">Population identification in northern snakehead (Channa argus) through machine learning integration of informative SNPs from whole-genome sequencing and 50K SNP array.</span>
+        <span class="pub-journal">Aquaculture</span>, 2026, 743659.
+        <span class="role co">通讯作者</span>
+        <a href="https://doi.org/10.1016/j.aquaculture.2026.743659" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors">Xie W#, Xia WW#, Liu JJ, Liu JF, Wang Y, Ou M, Luo Q, Fei SZ, Chen KC, Jiang H, Zhao J*, <strong>Liu HY</strong>*.</span>
+        <span class="pub-title">Development of a multiplex microsatellite genotyping system and its application in parentage assignment of hybrid snakehead (Channa argus ♀ × C. maculata ♂).</span>
+        <span class="pub-journal">Aquaculture Reports</span>, 2026, 49: 103691.
+        <span class="role co">通讯作者</span>
+        <a href="https://doi.org/10.1016/j.aqrep.2026.103691" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors">Zhu CK*, Zhu JY, Wang Y, Lu C, Ouyang ZS, Pan ZJ, Li SC, Sun YH, Chang GL, Zhao HT, Zhang L*, <strong>Liu HY</strong>*.</span>
+        <span class="pub-title">Identification of growth-related SNPs and genes through genome-wide association studies in Pseudobagrus ussuriensis.</span>
+        <span class="pub-journal">Marine Biotechnology</span>, 2026, 28(3): 107.
+        <span class="role co">通讯作者</span>
+        <a href="https://doi.org/10.1007/s10126-026-10656-9" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors">Gan BJ, Wei LJ, Ma YX, Mo FL, Xiao S, Lu YD, Liu K, Yang BL, Zhang S*, <strong>Liu HY</strong>*.</span>
+        <span class="pub-title">A chromosome-level reference genome assembly of the giant pangasius (Pangasius sanitwongsei).</span>
+        <span class="pub-journal">Scientific Data</span>, 2026, 13: 130.
+        <span class="role co">通讯作者</span>
+        <a href="https://doi.org/10.1038/s41597-025-06445-z" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors"><strong>Liu HY</strong>#, Zhang J#, Cui TX, Zhang XC, Li KB, Wang F, Luo Q, Fei SZ, Chen BX, Zhu CK, Chen KC, Zhu XP, Li BJ, Zhao J*, Fang LZ*, Ou M*.</span>
+        <span class="pub-title">A chromosome-level genome assembly of the male darkbarbel catfish (Pelteobagrus vachelli) using PacBio HiFi and Hi-C data.</span>
+        <span class="pub-journal">Scientific Data</span>, 2025, 12(1): 351.
+        <span class="role">第一作者</span>
+        <a href="https://doi.org/10.1038/s41597-025-04662-0" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors">Yu LY#, <strong>Liu HY</strong>#, Wei J, Zhang WC, Hong KH, Li HR, Zhou QY, Su QY, Liufu B, Zhu XP*, Wang YK*.</span>
+        <span class="pub-title">A high-quality chromosome-level genome assembly and annotation of the giant freshwater prawn (Macrobrachium rosenbergii).</span>
+        <span class="pub-journal">Scientific Data</span>, 2025, 12(1): 1181.
+        <span class="role">共同第一</span>
+        <a href="https://doi.org/10.1038/s41597-025-05494-8" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors"><strong>Liu HY</strong>#, Liu JF#, Cui TX, Zhang J, Luo Q, Fei SZ, Chen KC, Zhu XP, Ou M*, Zhao J*.</span>
+        <span class="pub-title">A chromosome-level reference genome assembly of the small snakehead (Channa asiatica).</span>
+        <span class="pub-journal">Scientific Data</span>, 2025, 12(1): 1159.
+        <span class="role">第一作者</span>
+        <a href="https://doi.org/10.1038/s41597-025-05479-7" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors"><strong>Liu HY</strong>*, Yao JJ, Dong MD, Yi MS, Liu W*.</span>
+        <span class="pub-title">Chromosome-level genome assembly of the marble goby (Oxyeleotris marmorata).</span>
+        <span class="pub-journal">Scientific Data</span>, 2025, 12(1): 1596.
+        <span class="role co">通讯作者</span>
+        <a href="https://doi.org/10.1038/s41597-025-05878-w" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors"><strong>Liu HY</strong>#, Cui TX#, Zhang J, Zhang Y, Luo Q, Fei SZ, Chen KC, Zhao J*, Ou M*.</span>
+        <span class="pub-title">Identification of sex determination region and candidate genes in blotched snakehead (Channa maculata) through genome-wide association studies and transcriptome analysis.</span>
+        <span class="pub-journal">Aquaculture Reports</span>, 2025, 42: 102825.
+        <span class="role">第一作者</span>
+        <a href="https://doi.org/10.1016/j.aqrep.2025.102825" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors">Cui TX#, <strong>Liu HY</strong>#, Zhang J, Luo Q, Fei SZ, Chen KC, Zhao J*, Ou M*.</span>
+        <span class="pub-title">Development and evaluation of a 50K SNP array for blotched snakehead (Channa maculata).</span>
+        <span class="pub-journal">Aquaculture</span>, 2025, 598: 742020.
+        <span class="role">共同第一</span>
+        <a href="https://doi.org/10.1016/j.aquaculture.2024.742020" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors">Cui TX, Zhang J, Ou M, Luo Q, Fei SZ, Chen KC, Zhao J*, <strong>Liu HY</strong>*.</span>
+        <span class="pub-title">Potential of genome-wide association studies to improve genomic selection for growth traits in blotched snakehead (Channa maculata).</span>
+        <span class="pub-journal">Aquaculture</span>, 2025, 596: 741895.
+        <span class="role co">通讯作者</span>
+        <a href="https://doi.org/10.1016/j.aquaculture.2024.741895" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors">Zhang J, Cui TX, Ou M, Luo Q, Fei SZ, Zhang XC, Li KB, Wang F, Chen BX, Zhu XP, Chen KC, Zhao J*, <strong>Liu HY</strong>*.</span>
+        <span class="pub-title">GWAS and transcriptome analysis reveal male heterogametic sex-specific markers and candidate genes in darkbarbel catfish (Pelteobagrus vachelli).</span>
+        <span class="pub-journal">Aquaculture</span>, 2025, 743312.
+        <span class="role co">通讯作者</span>
+        <a href="https://doi.org/10.1016/j.aquaculture.2025.743312" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors"><strong>Liu HY</strong>#, Cui TX#, Liu HJ, Zhang J, Luo Q, Fei SZ, Chen KC, Zhu XP, Zhu CK, Li BJ, Fang LZ, Zhao J*, Ou M*.</span>
+        <span class="pub-title">Chromosome-level genome assembly of the mud carp (Cirrhinus molitorella) using PacBio HiFi and Hi-C sequencing.</span>
+        <span class="pub-journal">Scientific Data</span>, 2024, 11(1): 1249.
+        <span class="role">第一作者</span>
+        <a href="https://doi.org/10.1038/s41597-024-04075-5" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors">Liang YY, Liu HJ, Lu WX, Li J, Fang T, Gao N, Chen C, Zhao XX, Yang K, <strong>Liu HY</strong>*.</span>
+        <span class="pub-title">Chromosome-level genome assembly of the smallscale yellowfin (Plagiognathops microlepis).</span>
+        <span class="pub-journal">Scientific Data</span>, 2024, 11(1): 1234.
+        <span class="role co">通讯作者</span>
+        <a href="https://doi.org/10.1038/s41597-024-04105-2" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors"><strong>Liu HY</strong>#, Zhang J#, Cui TX, Xia WW, Luo Q, Fei SZ, Zhu XP, Chen KC, Zhao J*, Ou M*.</span>
+        <span class="pub-title">Genome-wide association studies (GWAS) and transcriptome analysis reveal male heterogametic sex-determining regions and candidate genes in northern snakeheads (Channa argus).</span>
+        <span class="pub-journal">International Journal of Molecular Sciences</span>, 2024, 25(20): 10889.
+        <span class="role">第一作者</span>
+        <a href="https://doi.org/10.3390/ijms252010889" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors"><strong>Liu HY</strong>#, Xia WW#, Ou M, Luo Q, Zhang XC, Fei SZ, Huang SJ, Zhao XJ, Zhang J, Cui TX, Xiong BY, Wu GH, Chen KC, Zhao J*.</span>
+        <span class="pub-title">A genome-wide association study to identify growth-related SNPs and genes in blotched snakehead (Channa maculata).</span>
+        <span class="pub-journal">Aquaculture Reports</span>, 2024, 35: 101932.
+        <span class="role">第一作者</span>
+        <a href="https://doi.org/10.1016/j.aqrep.2024.101932" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors"><strong>Liu HY</strong>#, Xia WW#, Li BJ, Liu L, Wang YK, Luo Q, Ou M, Zhu XP, Chen KC, Zhao J*.</span>
+        <span class="pub-title">Sex-specific markers developed by 2b-RAD and genome sequencing reveal an XX/XY sex-determination system in mud carp (Cirrhinus molitorella).</span>
+        <span class="pub-journal">Aquaculture</span>, 2023, 565: 739131.
+        <span class="role">第一作者</span>
+        <a href="https://doi.org/10.1016/j.aquaculture.2022.739131" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors">Liu L, <strong>Liu HY</strong>*, Xia WW, Chen KC, Luo Q, Ou M, Zhao J*.</span>
+        <span class="pub-title">Isolation and characterization of 66 SNP markers in blotched snakehead (Channa maculata) using 2b-RAD sequencing.</span>
+        <span class="pub-journal">Conservation Genetics Resources</span>, 2023, 15(4): 215-220.
+        <span class="role co">通讯作者</span>
+        <a href="https://doi.org/10.1007/s12686-023-01319-1" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors">Zhu CK*, <strong>Liu HY</strong>*, Pan ZJ, Cheng L*, Sun YH, Wang H, Chang GL, Wu N, Ding HY, Zhao HT, Zhang L*, Yu XS.</span>
+        <span class="pub-title">Insights into chromosomal evolution and sex determination of Pseudobagrus ussuriensis (Bagridae, Siluriformes) based on a chromosome-level genome.</span>
+        <span class="pub-journal">DNA Research</span>, 2022, 29(4): dsac028.
+        <span class="role">通讯作者</span>
+        <a href="https://doi.org/10.1093/dnares/dsac028" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors"><strong>Liu HY</strong>, Luo Q, Ou M, Zhu XP, Zhao J*, Chen KC*.</span>
+        <span class="pub-title">Construction of a high-density linkage map and QTL detection of growth and sex in blotched snakehead (Channa maculata).</span>
+        <span class="pub-journal">Aquaculture</span>, 2021, 736541.
+        <span class="role">第一作者</span>
+        <a href="https://doi.org/10.1016/j.aquaculture.2021.736541" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors">Zhu CK*, <strong>Liu HY</strong>*, Cheng L, Pan ZJ, Chang GL, Wu N, Wang H, Ding HY, Fang Y, Wang L.</span>
+        <span class="pub-title">Identification of sex-specific sequences through 2b-RAD sequencing in Pseudobagrus ussuriensis.</span>
+        <span class="pub-journal">Aquaculture</span>, 2021, 539: 736639.
+        <span class="role">通讯作者</span>
+        <a href="https://doi.org/10.1016/j.aquaculture.2021.736639" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors"><strong>Liu HY</strong>, Luo Q, Ou M, Zhu XP, Zhao J*, Chen KC*.</span>
+        <span class="pub-title">High-density genetic linkage map and QTL fine mapping of growth and sex in snakehead (Channa argus).</span>
+        <span class="pub-journal">Aquaculture</span>, 2020, 519: 734760.
+        <span class="role">第一作者</span>
+        <a href="https://doi.org/10.1016/j.aquaculture.2019.734760" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors">Zhou Y#, <strong>Liu HY</strong>#, Wang XH, Fu BD, Yu XM, Tong JG*.</span>
+        <span class="pub-title">QTL fine mapping for sex determination region in bighead carp (Hypophthalmichthys nobilis) and comparison with silver carp (Hypophthalmichthys molitrix).</span>
+        <span class="pub-journal">Marine Biotechnology</span>, 2020, 22: 41-53.
+        <span class="role">共同第一</span>
+        <a href="https://doi.org/10.1007/s10126-019-09929-3" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors"><strong>Liu HY</strong>, Pang MX, Yu XM, Zhou Y, Fu BD*, Tong JG.</span>
+        <span class="pub-title">Sex-specific markers developed by next-generation sequencing confirmed an XX/XY sex determination system in bighead carp (Hypophthalmichthys nobilis) and silver carp (Hypophthalmichthys molitrix).</span>
+        <span class="pub-journal">DNA Research</span>, 2018, 25: 257-264.
+        <span class="role">第一作者</span>
+        <a href="https://doi.org/10.1093/dnares/dsx054" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors"><strong>Liu HY</strong>, Fu BD, Pang MX, Feng X, Yu XM, Tong JG*.</span>
+        <span class="pub-title">A high-density genetic linkage map and QTL fine mapping for body weight in crucian carp (Carassius auratus) using 2b-RAD sequencing.</span>
+        <span class="pub-journal">G3: Genes, Genomes, Genetics</span>, 2017, 7: 2473-2487.
+        <span class="role">第一作者</span>
+        <a href="https://doi.org/10.1534/g3.117.041376" rel="noopener" target="_blank">DOI</a>
+      </li><li>
+        <span class="pub-authors"><strong>Liu HY</strong>, Fu BD, Pang MX, Feng X, Wang XH, Yu XM, Tong JG*.</span>
+        <span class="pub-title">QTL fine mapping and identification of candidate genes for growth-related traits in bighead carp (Hypophthalmichthys nobilis).</span>
+        <span class="pub-journal">Aquaculture</span>, 2016, 465: 134-143.
+        <span class="role">第一作者</span>
+        <a href="https://doi.org/10.1016/j.aquaculture.2016.08.039" rel="noopener" target="_blank">DOI</a>
+      </li></ol>
+
+  <h2>科研项目</h2>
+  <h3>主持（12 项）</h3>
+    <ul class="plain-list tight">
+      <li>广东省科学技术厅面上项目：基于低密度 SNP 育种芯片的斑鳢基因组选择方法构建及应用策略优化研究（2026A1515011962，2026–2028，10 万元）</li>
+      <li>海南省科学技术厅面上项目：鲮性别决定区域精细定位、关键基因鉴定及功能分析（326MS0347，2026–2028，8 万元）</li>
+      <li>广东省“百千万工程”农村科技特派员项目：水产良种繁育与健康养殖技术示范与推广（KTP20240444，2024–2027，20 万元）</li>
+      <li>中国水产科学研究院基本科研业务费：人工智能驱动的低密度 SNP 芯片基因组选择方法研究（2026SJHX1，2026，9 万元）</li>
+      <li>中国水产科学研究院基本科研业务费：人工智能驱动的全基因组选择育种技术（2025SJHX1，2025，12 万元）</li>
+      <li>专利成果转化：乌鳢的 SNP 芯片及应用（佛山港种渔业发展有限责任公司，2025–2028，75 万元）</li>
+      <li>专利成果转化：鉴别月鳢性别的分子标记及应用（广东百容水产良种集团，30 万元）</li>
+      <li>横向技术服务：鳢基因组选择技术服务（清远卓越水产有限公司，24 万元）</li>
+      <li>横向技术服务：白乌鱼选育良种工作服务（内江鑫永凌建设开发有限公司，40 万元）</li>
+      <li>广州市科学技术局基础与应用基础研究项目（博士青年科技人员类）：乌鳢 Y 染色体特征解析及在全雄鳢生产中的应用（202102021070，2021–2023，5 万元，已结题）</li>
+      <li>中国水产科学研究院基本科研业务费：EM 菌对全雄杂交鳢健康养殖效果研究（2021SJ-XT2，2021–2022，10 万元，已结题）</li>
+      <li>中国水产科学研究院基本科研业务费：斑鳢生长和性别相关 QTL 精细定位及候选基因筛选（2019KQ-001，2019–2020，15 万元，已结题）</li>
+    </ul>
+    <h3 style="margin-top:18px">参与（国家级/省部级）</h3>
+    <ul class="plain-list tight">
+      <li>国家自然科学基金面上项目：斑鳢性别决定基因定位与功能鉴定及性别决定机制研究（32373127，2024–2027，总经费 50 万元）</li>
+      <li>国家特色淡水鱼产业技术体系：鳢种质资源与遗传改良（CARS-46，2024–2027，总经费 300 万元）</li>
+      <li>国家重点研发计划“蓝色粮仓科技创新”：重要养殖鱼类基因组选育与单性控制技术（2018YFD0901201，2018–2022，总经费 922 万元，已结题）</li>
+      <li>省级乡村振兴战略专项资金种业振兴项目：杂交鳢“雄鳢2号”良种培育与推广（2022-SPY-00-016，总经费 300 万元）</li>
+      <li>政府采购项目：加州鲈（大口黑鲈）和生鱼（乌鳢）提纯复壮项目（JJ-2020-009，2021–2025，总经费 500 万元）</li>
+      <li>中国水产科学研究院科技创新团队：鳢和草鱼遗传育种创新团队（2020TD34，总经费 249 万元）</li>
+    </ul>
+
+  <h2>获奖、新品种与标准</h2>
+  <h3>奖励</h3>
+    <ul class="plain-list tight">
+      <li>杂交鳢良种培育研究及产业化应用 —— 中国水产学会范蠡科学技术奖·科技进步二等奖（2025）</li>
+      <li>杂交鳢良种培育及产业化关键技术研究与应用 —— 中国水产科学研究院科学技术奖（2025）；林浩然动物科学奖一等奖（2024）；岭南动植物科学技术奖一等奖（2024）</li>
+      <li>鳢新品种创制与应用推广 —— 钟麟水产种业科技奖（广东水产学会，2022）</li>
+      <li>“乌斑杂交鳢”苗种繁育和健康养殖技术应用推广奖（广东省农业农村厅，2020）</li>
+      <li>“温氏杯”广东种业科技创新大比武总决赛优秀项目（2021）</li>
+    </ul>
+    <h3 style="margin-top:18px">新品种</h3>
+    <ul class="plain-list tight">
+      <li>杂交鳢“雄鳢1号”（GS-02-003-2022）—— 入选渔业新技术新产品新装备 2023 年度优秀科技成果、中国农业农村重大新产品</li>
+    </ul>
+    <h3 style="margin-top:18px">标准（7 项：行业标准 6 项、地方标准 1 项）</h3>
+    <ul class="plain-list tight">
+      <li>鲮 亲鱼和苗种（SC/T 1185-2025）｜月鳢 亲鱼和苗种（SC/T 1186-2025）</li>
+      <li>乌鳢人工繁育技术规范（SC/T 1174-2023）｜斑鳜（SC/T 1171-2023）</li>
+      <li>斑鳢 亲鱼和苗种（SC/T 1162-2022）｜高体革䱨（SC/T 1152-2021）</li>
+      <li>广东省地方标准：杂交鳢“雄鳢1号”（DB44/T 2385-2022）</li>
+    </ul>
+    <h3 style="margin-top:18px">专利</h3>
+    <ul class="plain-list tight">
+      <li>授权专利共 12 项（发明专利 11 项、实用新型 1 项），其中第一发明人发明专利 5 项：乌鳢的 SNP 芯片及应用（ZL 202411478644.1）、鉴别鲮性别的分子标记（ZL 202211273634.5）、鉴别月鳢性别的分子标记（ZL 202311194491.3）、鉴别线鳢性别的分子标记（ZL 202211709489.0）、鉴定瓦氏黄颡鱼性别的分子标记（ZL 202311335874.8）</li>
+      <li>第一发明人专利已实现成果转化 2 项（乌鳢 SNP 育种芯片；月鳢性别鉴定分子标记）</li>
+    </ul>
+
+  <h2>学术服务</h2>
+  <ul class="plain-list tight">
+      <li><strong>客座编辑</strong>：<em>Animals</em>、<em>Fishes</em></li>
+      <li><strong>审稿人</strong>：<em>Nature Communications</em>、<em>Scientific Data</em>、<em>Communications Biology</em>、<em>Zoological Research</em>、<em>iScience</em>、<em>Aquaculture</em>、<em>Aquaculture Reports</em>、<em>Marine Biotechnology</em>、
+          <em>International Journal of Biological Macromolecules</em>、<em>Genomics</em>、<em>BMC Genomics</em>、<em>Comparative Biochemistry and Physiology Part D</em>、
+          <em>Heliyon</em>、<em>Genes</em>、<em>Biology</em>、<em>Animals</em>、<em>Fishes</em> 等</li>
+      <li><strong>研究生培养</strong>：指导研究生 5 名完成学位论文</li>
+        <li><strong>研究生导师</strong>：海南大学研究生导师、淮阴师范学院研究生导师</li>
+    </ul>
+
+    <h2 style="margin-top:26px">教育与工作经历</h2>
+    
+
+  <h2>联系方式</h2>
+  <ul class="plain-list tight">
+      <li>邮箱：<a href="mailto:hyliu@prfri.ac.cn">hyliu@prfri.ac.cn</a></li>
+      <li>单位：中国水产科学研究院珠江水产研究所 · 水产种质资源与遗传育种研究室</li>
+      <li>地址：广东省广州市荔湾区西塱兴渔路1号</li>
+      <li>ORCID：<a href="https://orcid.org/0000-0001-8301-4595" rel="me noopener" target="_blank">0000-0001-8301-4595</a>　｜　Google Scholar：<a href="https://scholar.google.com.hk/citations?user=ZkBGkaMAAAAJ&hl=zh-CN" rel="noopener" target="_blank">scholar.google.com.hk</a>　｜　百度学术：<a href="https://xueshu.baidu.com/scholarID/CN-BP84NSHJ" rel="noopener" target="_blank">xueshu.baidu.com</a></li>
+    </ul>
+
+  <p class="cv-note">本页与个人主页内容一致；点击上方按钮可另存为 PDF。</p>
+</main>
+</body>
+</html>
